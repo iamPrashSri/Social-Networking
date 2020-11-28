@@ -1,14 +1,64 @@
 import React from 'react';
 import "./Header.css";
+import SearchIcon from '@material-ui/icons/Search';
+import HomeIcon from '@material-ui/icons/Home';
+import FlagIcon from '@material-ui/icons/Flag';
+import SubscriptionsOutlinedIcon from '@material-ui/icons/SubscriptionsOutlined';
+import StorefrontOutlinedIcon from '@material-ui/icons/StorefrontOutlined';
+import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
+import { Avatar, IconButton } from '@material-ui/core';
+import AddIcon from '@material-ui/icons/Add';
+import ForumIcon from '@material-ui/icons/Forum';
+import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 function Header() {
     return (
         <div className="header">
             <div className="header__left">
-                <img src="https://commons.wikimedia.org/wiki/Category:Facebook_f_logos#/media/File:Facebook_f_logo_(2019).svg" alt=""/>
+                <img src="https://upload.wikimedia.org/wikipedia/en/8/8c/Facebook_Home_logo_old.svg" alt=""/>
+            
+                <div className="header__input">
+                    <SearchIcon />
+                    <input type="text" placeholder="Search Facebook"/>
+                </div>
             </div>
-            <div className="header__middle"></div>
-            <div className="header__right"></div>
+            <div className="header__center">
+                <div className="header__option header__option--active">
+                    <HomeIcon fontSize="large"></HomeIcon>
+                </div>
+                <div className="header__option">
+                    <FlagIcon fontSize="large"></FlagIcon>
+                </div>
+                <div className="header__option">
+                    <SubscriptionsOutlinedIcon fontSize="large"></SubscriptionsOutlinedIcon>
+                </div>
+                <div className="header__option">
+                    <StorefrontOutlinedIcon fontSize="large"></StorefrontOutlinedIcon>
+                </div>
+                <div className="header__option">
+                    <SupervisedUserCircleIcon fontSize="large"></SupervisedUserCircleIcon>
+                </div>
+            </div>
+            <div className="header__right">
+                <div className="header__info">
+                    <Avatar />
+                    <h4>Prashant Srivastava</h4>
+                </div>
+
+                <IconButton>
+                    <AddIcon />
+                </IconButton>
+                <IconButton>
+                    <ForumIcon />
+                </IconButton>
+                <IconButton>
+                    <NotificationsActiveIcon />
+                </IconButton>
+                <IconButton>
+                    <ExpandMoreIcon />
+                </IconButton>
+            </div>
         </div>
     )
 }
