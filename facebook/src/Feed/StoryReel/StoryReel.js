@@ -6,9 +6,7 @@ function StoryReel() {
     return (
         <div className="storyReel">
             <Story 
-                img='https://fsa.zobj.net/crop.php?r=bkt_HWodHR-kqYC05OBLoVpe469zmU7DusBfGM8
-                    zCmnDnSNFtt53-uqSj7Z2PMzhUlDIN93DRurwX9DS2DUftE_pCz9Uwf_ayadaHTHdVeepcji
-                    ERQAY9EQ7WLgY5-USgHoCJ0nI4eLOYic6'
+                img='https://miro.medium.com/max/12032/0*__5nhm_2qHSrTVoZ'
                 profileName='Prashant Srivastava'
                 profilePicSrc='https://avatars2.githubusercontent.com/u/56686827?
                             s=400&u=4667f93156350bd84939c66a48a67e2
@@ -16,9 +14,7 @@ function StoryReel() {
             />
 
             <Story 
-                img='https://fsa.zobj.net/crop.php?r=bkt_HWodHR-kqYC05OBLoVpe469zmU7DusBfGM8
-                    zCmnDnSNFtt53-uqSj7Z2PMzhUlDIN93DRurwX9DS2DUftE_pCz9Uwf_ayadaHTHdVeepcji
-                    ERQAY9EQ7WLgY5-USgHoCJ0nI4eLOYic6'
+                img='https://i.pinimg.com/originals/af/8d/63/af8d63a477078732b79ff9d9fc60873f.jpg'
                 profileName='Suraj Shinde'
                 profilePicSrc='https://avatars2.githubusercontent.com/u/56686827?
                             s=400&u=4667f93156350bd84939c66a48a67e2
@@ -26,9 +22,7 @@ function StoryReel() {
             />
 
             <Story 
-                img='https://fsa.zobj.net/crop.php?r=bkt_HWodHR-kqYC05OBLoVpe469zmU7DusBfGM8
-                    zCmnDnSNFtt53-uqSj7Z2PMzhUlDIN93DRurwX9DS2DUftE_pCz9Uwf_ayadaHTHdVeepcji
-                    ERQAY9EQ7WLgY5-USgHoCJ0nI4eLOYic6'
+                img='https://i.pinimg.com/originals/c8/2a/f9/c82af9c8a818d8dba545fb896b8a6b2c.jpg'
                 profileName='Shrikant Davange'
                 profilePicSrc='https://avatars2.githubusercontent.com/u/56686827?
                             s=400&u=4667f93156350bd84939c66a48a67e2
@@ -36,9 +30,7 @@ function StoryReel() {
             />
 
             <Story 
-                img='https://fsa.zobj.net/crop.php?r=bkt_HWodHR-kqYC05OBLoVpe469zmU7DusBfGM8
-                    zCmnDnSNFtt53-uqSj7Z2PMzhUlDIN93DRurwX9DS2DUftE_pCz9Uwf_ayadaHTHdVeepcji
-                    ERQAY9EQ7WLgY5-USgHoCJ0nI4eLOYic6'
+                img='https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg'
                 profileName='Utkarsh Pagar'
                 profilePicSrc='https://avatars2.githubusercontent.com/u/56686827?
                             s=400&u=4667f93156350bd84939c66a48a67e2
@@ -46,9 +38,8 @@ function StoryReel() {
             />
 
             <Story 
-                img='https://fsa.zobj.net/crop.php?r=bkt_HWodHR-kqYC05OBLoVpe469zmU7DusBfGM8
-                    zCmnDnSNFtt53-uqSj7Z2PMzhUlDIN93DRurwX9DS2DUftE_pCz9Uwf_ayadaHTHdVeepcji
-                    ERQAY9EQ7WLgY5-USgHoCJ0nI4eLOYic6'
+                img='https://specials-images.forbesimg.com/imageserve/5f302109ffad89f9130e07db
+                    /960x0.jpg?cropX1=0&cropX2=4800&cropY1=243&cropY2=2943'
                 profileName='Nikhil Girwalkar'
                 profilePicSrc='https://avatars2.githubusercontent.com/u/56686827?
                             s=400&u=4667f93156350bd84939c66a48a67e2

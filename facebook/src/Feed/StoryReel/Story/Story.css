@@ -25,5 +25,5 @@
     position: absolute;     /* Because parent has relative positioning child will have absolute */
     bottom: 20px;
     left: 20px;
-    color: red;
+    color: white;
 }

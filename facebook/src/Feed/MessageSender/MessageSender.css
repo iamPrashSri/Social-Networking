@@ -1,0 +1,61 @@
+.messageSender {
+    margin-top: 30px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75); 
+}
+
+.messageSender__top {
+    display: flex;
+    border-bottom: 1px;
+    padding: 15px;
+}
+
+.messageSender__top > form {
+    flex: 1;
+    display: flex;
+}
+
+.messageSender__top > form > input {
+    outline-width: 0px;
+    border: 0px;
+    padding: 5px 20px;
+    border-radius: 999px;
+    margin: 0px 20px;   /* First - Top & Bottom, Second - Left & Right */
+    background-color: #eff2f5;
+}
+
+.messageSender__top > form > button {
+    display: none;  /* Keep the functionality but hide the button */
+}
+
+.messageSender__input {
+    flex: 1;    /* Flex = 1 means element will try to take as much space as possible */
+}
+
+.messageSender__option {
+    display: flex;
+    padding: 20px;
+    margin: 5px;
+    align-items: center;
+    color: grey;
+}
+
+.messageSender__option > h3 {
+    font-size: medium;
+    margin-left: 10px;
+}
+
+.messageSender__option:hover {
+    border-radius: 20px;
+    background-color: #eff2f5;
+    cursor: pointer;
+}
+
+.messageSender__bottom {
+    display: flex;
+    justify-content: space-evenly;
+}
