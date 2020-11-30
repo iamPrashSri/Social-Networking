@@ -4,12 +4,14 @@ import SideBar from "./Sidebar/Sidebar";
 import Feed from "./Feed/Feed";
 import Widgets from "./Widgets/Widgets";
 import Login from './Login/Login';
+import { useStateValue } from "./DataLayerConfig/StateProvider";
 
 function App() {
-  let user = null;
+  const [{user}, dispatch] = useStateValue();
   return (
     // BEM Naming Convention - Helps to scale applications (Learn this)
     // npm install -g firebase-tools
+    // React Context API
     <div className="app">
       {!user ? (
         <Login />

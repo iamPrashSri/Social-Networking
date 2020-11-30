@@ -1,33 +1,42 @@
-import React from 'react';
-import './Feed.css';
-import StoryReel from './StoryReel/StoryReel';
-import MessageSender from './MessageSender/MessageSender';
+import React, { useEffect, useState } from "react";
+import "./Feed.css";
+import StoryReel from "./StoryReel/StoryReel";
+import MessageSender from "./MessageSender/MessageSender";
 import Post from "./Post/Post";
+import db from "../firebase";
 
 function Feed() {
-    return (
-        <div className="feed">
-            <StoryReel />
-            <MessageSender />
+  let [posts, setPosts] = useState([]);
 
-            <Post 
-                profilePic='https://avatars2.githubusercontent.com/u/56686827?
-                            s=400&u=4667f93156350bd84939c66a48a67e2
-                            ff359a0e2&v=4'
-                image='https://miro.medium.com/max/12032/0*__5nhm_2qHSrTVoZ'
-                timeStamp="This is a timestamp"
-                message="WOW This works!!"
-                username="iamPrash_Sri"
-            />
-            <Post 
-                profilePic='https://media.short-biography.com/wp-content/uploads/hrithik-roshan/Hrithik-Roshan.jpg'
-                image=''
-                timeStamp="This is a timestamp"
-                message="WOW This works!!"
-                username="iamHritikRosh"
-            />
-        </div>
-    )
+  /* useEffect will run only ONCE when the feed component loads */
+  useEffect(() => {
+    db.collection("Posts").onSnapshot((snapshot) => {
+      /* onSnapshot will return realtime view of the collection if any CRUD operation is performed */
+      setPosts(
+        snapshot.docs.map((doc) => ({
+          id: doc.id,
+          data: doc.data(),
+        }))
+      );
+    });
+  }, []);
+  return (
+    <div className="feed">
+      <StoryReel />
+      <MessageSender />
+
+      {posts.map((post) => (
+        <Post
+          key={post.data.id}
+          profilePic={post.data.profilePic}
+          image={post.data.image}
+          timeStamp={post.data.timeStamp}
+          message={post.data.message}
+          username={post.data.username}
+        />
+      ))}
+    </div>
+  );
 }
 
-export default Feed
+export default Feed;

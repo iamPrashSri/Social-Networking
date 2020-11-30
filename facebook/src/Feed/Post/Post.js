@@ -16,7 +16,7 @@ function Post({ profilePic, image, username, timeStamp, message}) {
                 />
                 <div className="post__topInfo">
                     <h3>{username}</h3>
-                    <p>Timestamp...</p>
+                    <p>{new Date(timeStamp?.toDate()).toUTCString()}</p>
                 </div>
             </div>
             <div className="post__bottom">
